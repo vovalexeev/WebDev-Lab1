@@ -1,0 +1,59 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+    background-color: rgb(114, 155, 216);
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "header"
+        "weather-here"
+        "favorites";
+} 
+.header{
+    grid-area: header;
+}
+.weather-here{
+    grid-area: weather-here;
+}
+.favorites{
+    grid-area: favorites;
+}
+
+
+h1{
+    color: black;
+    font-size: 24pt;
+}/*
+h3{
+    text-align: center;
+}
+.header{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: rgb(16, 74, 160);
+}
+.buttonSubmit{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 20px;
+    border-radius: 8px;
+    border-color: rgb(54, 34, 145);
+    background: rgb(54, 34, 145);
+    width: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 1000px){
+	.info1 ul li{
+		display: block;
+        width: 96%;
+        margin-bottom: 10px;
+	}
+}*/

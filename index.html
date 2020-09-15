@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web_lab1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Погода</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <section>
+                <h2>Погода</h2>
+                <button type="submit" class="button-update">Обновить информацию</button>
+            </section>
+        </header>
+        <section class="weather-here">
+            <h1>Saint Petersburg</h1>
+            <img src="SPb-icon.png" alt="SPb-icon">
+            <h2>8°C</h2>
+            <ul>
+                <li>
+                    <h3>Ветер</h3>
+                    Moderate breeze, 6.0 m/s, NNW
+                </li>
+                <li>
+                    <h3>Облачность</h3>
+                    Broken
+                </li>
+                <li>
+                    <h3>Давление</h3>
+                    1010 hpa
+                </li>
+                <li>
+                    <h3>Влажность</h3>
+                    60%
+                </li>
+                <li>
+                    <h3>Координаты</h3>
+                    [59°57′, 30°19′]
+                </li>
+            </ul>
+        </section>
+        <section class="favorites">
+            <!--<button type="submit" class="add-city">Добавить новый город</button>
+            <a href="#"><img src="img/add-city.png" alt="Add city"></a>-->
+            <section class="Moscow">
+                <h2>Moscow</h2>
+                <img src="Moscow-icon.png" alt="Moscow-icon">
+                <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
+                <h2>10°C</h2>
+                <ul>
+                    <li>
+                        <h3>Ветер</h3>
+                        Gentle breeze, 4.5 m/s, SE
+                    </li>
+                    <li>
+                        <h3>Облачность</h3>
+                        Overcast
+                    </li>
+                    <li>
+                        <h3>Давление</h3>
+                        1007 hpa
+                    </li>
+                    <li>
+                        <h3>Влажность</h3>
+                        15%
+                    </li>
+                    <li>
+                        <h3>Координаты</h3>
+                        [55°45′, 37°36′]
+                    </li>
+                </ul>
+            </section>
+            <section class="Krasnoyarsk">
+                <h2>Krasnoyarsk</h2>
+                <img src="Krasnoyarsk-icon.png" alt="Krasnoyarsk-icon">
+                <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
+                <h2>8°C</h2>
+                <ul>
+                    <li>
+                        <h3>Ветер</h3>
+                        Gentle breeze, 4.0 m/s, E
+                    </li>
+                    <li>
+                        <h3>Облачность</h3>
+                        Broken
+                    </li>
+                    <li>
+                        <h3>Давление</h3>
+                        1012 hpa
+                    </li>
+                    <li>
+                        <h3>Влажность</h3>
+                        50%
+                    </li>
+                    <li>
+                        <h3>Координаты</h3>
+                        [56°01′, 92°52′]
+                    </li>
+                </ul>
+            </section>
+            <section class="Zelenogorsk">
+                <h2>Zelenogorsk</h2>
+                <img src="Zelenogorsk-icon.png" alt="Zelenogorsk-icon">
+                <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
+                <h2>4°C</h2>
+                <ul>
+                    <li>
+                        <h3>Ветер</h3>
+                        Moderate breeze, 6.0 m/s, NNW
+                    </li>
+                    <li>
+                        <h3>Облачность</h3>
+                        Clear
+                    </li>
+                    <li>
+                        <h3>Давление</h3>
+                        1014 hpa
+                    </li>
+                    <li>
+                        <h3>Влажность</h3>
+                        40%
+                    </li>
+                    <li>
+                        <h3>Координаты</h3>
+                        [56°06′, 94°35′]
+                    </li>
+                </ul>
+            </section>
+            <section class="Paris">
+                <h2>Paris</h2>
+                <img src="Paris-icon.png" alt="Paris-icon">
+                <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
+                <h2>13°C</h2>
+                <ul>
+                    <li>
+                        <h3>Ветер</h3>
+                        Light breeze, 2.5 m/s, WNW
+                    </li>
+                    <li>
+                        <h3>Облачность</h3>
+                        Scattered 
+                    </li>
+                    <li>
+                        <h3>Давление</h3>
+                        1009 hpa
+                    </li>
+                    <li>
+                        <h3>Влажность</h3>
+                        30%
+                    </li>
+                    <li>
+                        <h3>Координаты</h3>
+                        [48°51′, 2°20′]
+                    </li>
+                </ul>
+            </section>
+            <section class="London">
+                <h2>London</h2>
+                <img src="London-icon.png" alt="London-icon">
+                <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
+                <h2>9°C</h2>
+                <ul>
+                    <li>
+                        <h3>Ветер</h3>
+                        Moderate breeze, 6.0 m/s, W
+                    </li>
+                    <li>
+                        <h3>Облачность</h3>
+                        Scattered 
+                    </li>
+                    <li>
+                        <h3>Давление</h3>
+                        1010 hpa
+                    </li>
+                    <li>
+                        <h3>Влажность</h3>
+                        5%
+                    </li>
+                    <li>
+                        <h3>Координаты</h3>
+                        [51°30′, 0°07′]
+                    </li>
+                </ul>
+            </section>
+            <section class="Berlin">
+                <h2>Berlin</h2>
+                <img src="Berlin-icon.png" alt="Berlin-icon">
+                <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
+                <h2>16°C</h2>
+                <ul>
+                    <li>
+                        <h3>Ветер</h3>
+                        Light air, 1 m/s, S
+                    </li>
+                    <li>
+                        <h3>Облачность</h3>
+                        Overcast
+                    </li>
+                    <li>
+                        <h3>Давление</h3>
+                        1011 hpa
+                    </li>
+                    <li>
+                        <h3>Влажность</h3>
+                        76%
+                    </li>
+                    <li>
+                        <h3>Координаты</h3>
+                        [52°31′, 13°24′]
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
