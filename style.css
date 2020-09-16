@@ -4,7 +4,6 @@ body {
     background-color: rgb(114, 155, 216);
     color: rgb(0, 0, 0);
 }
-
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -14,17 +13,41 @@ body {
         "weather-here"
         "favorites";
 } 
+.section-header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.button-update{
+    border-radius: 10px;
+}
 .header{
     grid-area: header;
 }
 .weather-here{
     grid-area: weather-here;
+    display: flex;
+    justify-content: space-between;
+}
+.weather-here-main{
+    /*flex-grow: 1;*/
+}
+.weather-extra-data{
+
+}
+.extra-parameter{
+    background-color: white;
+    list-style-type: none;
+    margin-bottom: 10px;
 }
 .favorites{
     grid-area: favorites;
+    display: flex; 
+    flex-wrap: wrap;
 }
-
-
+.city{
+    flex: 50%;
+}
 h1{
     color: black;
     font-size: 24pt;
