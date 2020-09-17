@@ -5,219 +5,235 @@
     <meta name="description" content="Web_lab1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Погода</title>
+    <title>Weather</title>
 </head>
 <body>
     <main>
-        <div class="container">
-            <header class="header">
-                <section class="section-header">
-                    <h2 class="main-title">Погода</h2>
-                    <button type="button" class="button-update">Обновить геолокацию</button>
-                </section>
-            </header>
-            <section class="weather-here">
+        <section class="weather-here-header">
+            <h2 class="main-title">Weather here</h2>
+            <button class="weather-here-update-button" type="button">Update geolocation</button>
+            <img class="weather-here-update-img" src="img/update-geolocation.png" alt="Update-geolocation">
+        </section> 
+        <section class="weather-here">
+            <section class="weather-here-city">
+                <h1>Saint Petersburg</h1>
                 <section class="weather-here-main">
-                    <h1>Saint Petersburg</h1>
-                    <img src="img/cloud.png" alt="SPb-icon">
-                    <h2>8°C</h2>
+                    <img class="weather-here-icon" src="img/cloud.png" alt="SPb-icon">
+                    <div class="weather-here-temperature">8°C</div>
                 </section>
-                <ul class="weather-extra-data">
+            </section>
+            <ul class="weather-here-extra-data">
+                <li class="extra-parameter">
+                    <b>Wind</b>
+                    Light breeze, 6.0 m/s, NNW
+                </li>
+                <li class="extra-parameter">
+                    <b>Cloud cover</b>
+                    Broken
+                </li>
+                <li class="extra-parameter">
+                    <b>Atmospheric pressure</b>
+                    1010 hpa
+                </li>
+                <li class="extra-parameter">
+                    <b>Humidity</b>
+                    60%
+                </li>
+                <li class="extra-parameter">
+                    <b>Coordinates</b>
+                    [59°57′, 30°19′]
+                </li>
+            </ul>
+        </section>
+        <section class="favorites-header">
+            <h2 class="main-title">Favorites</h2>
+            <form class="add-city-form">
+                <input id="add-city-input" class="add-city-input" required type="text" placeholder="Add a new city">
+                <a href="#"><img class="add-city-icon" src="img/plus.png" alt="Add city"></a>
+            </form>
+        </section>
+        <section class="favorites-cities">
+            <section class="favorites-city">
+                <section class="favorites-main">
+                    <h2>Moscow</h2>
+                    <h2>10°C</h2>
+                    <img class="favorites-icon-weather" src="img/partly-cloudy.png" alt="Moscow-icon">
+                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                </section>
+                <ul>
                     <li class="extra-parameter">
-                        <b>Ветер</b>
-                        Moderate breeze, 6.0 m/s, NNW
+                        <b>Wind</b>
+                        Gentle breeze, 4.5 m/s, SE
                     </li>
                     <li class="extra-parameter">
-                        <b>Облачность</b>
-                        Broken
+                        <b>Cloud cover</b>
+                        Overcast
                     </li>
                     <li class="extra-parameter">
-                        <b>Давление</b>
-                        1010 hpa
+                        <b>Atmospheric pressure</b>
+                        1007 hpa
                     </li>
                     <li class="extra-parameter">
-                        <b>Влажность</b>
-                        60%
+                        <b>Humidity</b>
+                        15%
                     </li>
                     <li class="extra-parameter">
-                        <b>Координаты</b>
-                        [59°57′, 30°19′]
+                        <b>Coordinates</b>
+                        [55°45′, 37°36′]
                     </li>
                 </ul>
             </section>
-            <section class="favorites">
-                <!--<button type="submit" class="add-city">Добавить новый город</button>
-                <a href="#"><img src="img/add-city.png" alt="Add city"></a>-->
-                <section class="city">
-                    <h2>Moscow</h2>
-                    <img src="img/partly-cloudy.png" alt="Moscow-icon">
-                    <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
-                    <h2>10°C</h2>
-                    <ul>
-                        <li class="extra-parameter">
-                            <b>Ветер</b>
-                            Gentle breeze, 4.5 m/s, SE
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Облачность</b>
-                            Overcast
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Давление</b>
-                            1007 hpa
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Влажность</b>
-                            15%
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Координаты</b>
-                            [55°45′, 37°36′]
-                        </li>
-                    </ul>
-                </section>
-                <section class="city">
+            <section class="favorites-city">
+                <section class="favorites-main">
                     <h2>Krasnoyarsk</h2>
-                    <img src="img/cloud-lighting.png" alt="Krasnoyarsk-icon">
-                    <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
                     <h2>8°C</h2>
-                    <ul>
-                        <li class="extra-parameter">
-                            <b>Ветер</b>
-                            Gentle breeze, 4.0 m/s, E
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Облачность</b>
-                            Broken
-                        </li>
-                        <li class="extra-parameter"> 
-                            <b>Давление</b>
-                            1012 hpa
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Влажность</b>
-                            50%
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Координаты</b>
-                            [56°01′, 92°52′]
-                        </li>
-                    </ul>
+                    <img class="favorites-icon-weather" src="img/cloud-lighting.png" alt="Krasnoyarsk-icon">
+                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
                 </section>
-                <section class="city">
-                    <h2>Zelenogorsk</h2>
-                    <img src="img/heavy-rain.png" alt="Zelenogorsk-icon">
-                    <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
-                    <h2>4°C</h2>
-                    <ul>
-                        <li class="extra-parameter">
-                            <b>Ветер</b>
-                            Moderate breeze, 6.0 m/s, NNW
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Облачность</b>
-                            Clear
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Давление</b>
-                            1014 hpa
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Влажность</b>
-                            90%
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Координаты</b>
-                            [56°06′, 94°35′]
-                        </li>
-                    </ul>
-                </section>
-                <section class="city">
-                    <h2>Paris</h2>
-                    <img src="img/sun.png" alt="Paris-icon">
-                    <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
-                    <h2>-3°C</h2>
-                    <ul>
-                        <li class="extra-parameter">
-                            <b>Ветер</b>
-                            Light breeze, 2.5 m/s, WNW
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Облачность</b>
-                            Scattered 
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Давление</b>
-                            1009 hpa
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Влажность</b>
-                            50%
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Координаты</b>
-                            [48°51′, 2°20′]
-                        </li>
-                    </ul>
-                </section>
-                <section class="city">
-                    <h2>London</h2>
-                    <img src="img/snow.png" alt="London-icon">
-                    <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
-                    <h2>-2°C</h2>
-                    <ul>
-                        <li class="extra-parameter">
-                            <b>Ветер</b>
-                            Moderate breeze, 6.0 m/s, W
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Облачность</b>
-                            Scattered 
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Давление</b>
-                            1010 hpa
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Влажность</b>
-                            5%
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Координаты</b>
-                            [51°30′, 0°07′]
-                        </li>
-                    </ul>
-                </section>
-                <section class="city">
-                    <h2>Berlin</h2>
-                    <img src="img/cloud.png" alt="Berlin-icon">
-                    <a href="#"><img src="img/delete-city.png" alt="Delete city"></a>
-                    <h2>16°C</h2>
-                    <ul>
-                        <li class="extra-parameter">
-                            <b>Ветер</b>
-                            Light air, 1 m/s, S
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Облачность</b>
-                            Overcast
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Давление</b>
-                            1011 hpa
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Влажность</b>
-                            76%
-                        </li>
-                        <li class="extra-parameter">
-                            <b>Координаты</b>
-                            [52°31′, 13°24′]
-                        </li>
-                    </ul>
-                </section>
+                <ul>
+                    <li class="extra-parameter">
+                        <b>Wind</b>
+                        Gentle breeze, 4.0 m/s, E
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Cloud cover</b>
+                        Broken
+                    </li>
+                    <li class="extra-parameter"> 
+                        <b>Atmospheric pressure</b>
+                        1012 hpa
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Humidity</b>
+                        50%
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Coordinates</b>
+                        [56°01′, 92°52′]
+                    </li>
+                </ul>
             </section>
-        </div>
+            <section class="favorites-city">
+                <section class="favorites-main">
+                    <h2>Zelenogorsk</h2>
+                    <h2>4°C</h2>
+                    <img class="favorites-icon-weather" src="img/heavy-rain.png" alt="Zelenogorsk-icon">
+                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                </section>
+                <ul>
+                    <li class="extra-parameter">
+                        <b>Wind</b>
+                        Light breeze, 6.0 m/s, NNW
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Cloud cover</b>
+                        Clear
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Atmospheric pressure</b>
+                        1014 hpa
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Humidity</b>
+                        90%
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Coordinates</b>
+                        [56°06′, 94°35′]
+                    </li>
+                </ul>
+            </section>
+            <section class="favorites-city">
+                <section class="favorites-main">
+                    <h2>Paris</h2>
+                    <h2>-3°C</h2>
+                    <img class="favorites-icon-weather" src="img/sun.png" alt="Paris-icon">
+                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                </section>
+                <ul>
+                    <li class="extra-parameter">
+                        <b>Wind</b>
+                        Light breeze, 2.5 m/s, WNW
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Cloud cover</b>
+                        Scattered 
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Atmospheric pressure</b>
+                        1009 hpa
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Humidity</b>
+                        50%
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Coordinates</b>
+                        [48°51′, 2°20′]
+                    </li>
+                </ul>
+            </section>
+            <section class="favorites-city">
+                <section class="favorites-main">
+                    <h2>London</h2>
+                    <h2>-2°C</h2>
+                    <img class="favorites-icon-weather" src="img/snow.png" alt="London-icon">
+                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                </section>
+                <ul>
+                    <li class="extra-parameter">
+                        <b>Wind</b>
+                        Moderate breeze, 6.0 m/s, W
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Cloud cover</b>
+                        Scattered 
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Atmospheric pressure</b>
+                        1010 hpa
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Humidity</b>
+                        5%
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Coordinates</b>
+                        [51°30′, 0°07′]
+                    </li>
+                </ul>
+            </section>
+            <section class="favorites-city">
+                <section class="favorites-main">
+                    <h2>Berlin</h2>
+                    <h2>16°C</h2>
+                    <img class="favorites-icon-weather" src="img/cloud.png" alt="Berlin-icon">
+                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                </section>
+                <ul>
+                    <li class="extra-parameter">
+                        <b>Wind</b>
+                        Light air, 1 m/s, S
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Cloud cover</b>
+                        Overcast
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Atmospheric pressure</b>
+                        1011 hpa
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Humidity</b>
+                        76%
+                    </li>
+                    <li class="extra-parameter">
+                        <b>Coordinates</b>
+                        [52°31′, 13°24′]
+                    </li>
+                </ul>
+            </section>
+        </section>
     </main>
 </body>
 </html>
