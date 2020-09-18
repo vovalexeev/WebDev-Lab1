@@ -5,11 +5,15 @@ body {
     color: rgb(0, 0, 0);
     margin: 0 2% 2% 2%;
 }
-h1{
+h2{
     color: black;
     font-size: 24pt;
     text-align: center;
-    margin-top: 0;
+}
+h3{
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
 }
 ul{
     padding: 0;
@@ -23,6 +27,7 @@ ul{
 .main-title{
     font-weight: 400;
     font-size: 28pt;
+    text-align: left;
 }
 .weather-here-update-button{
     font-size: 13pt;
@@ -33,7 +38,7 @@ ul{
     background: rgb(255, 255, 255);
     margin-left: 30%;   
 }
-.weather-here-update-img{
+.update-media{
     display: none;
 }
 .weather-here{
@@ -67,6 +72,9 @@ ul{
     border-radius: 10px;
     border: 2px solid black;
 }
+.name-parameter{
+    font-weight: bold;
+}
 .favorites-header{
     display: flex;
     justify-content: space-between;
@@ -82,18 +90,28 @@ ul{
     border-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
+.add-button{
+    border: 0; 
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+}
 .add-city-icon{
     width: 50px;
     height: 50px;
     background-color: white;
     border-radius: 10px;
-    margin-left: 5px;
     border: 2px solid black;
 }
 .favorites-cities{
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.temperature{
+    font-size: 20pt;
+    font-weight: bold;
 }
 .favorites-city{
     width: calc(1/2 * 100% - (1 - 1/2) * 8%);
@@ -114,6 +132,12 @@ ul{
     border-radius: 10px;
     border: 2px solid black;
 }
+.delete-button{
+    border: 0; 
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
 @media only screen and (max-width: 1300px) and (min-width: 1001px) {
     .weather-here-update-button{
         margin-left: 18%;   
@@ -123,8 +147,14 @@ ul{
     body {
         font-size: 12pt;
     }
+    .temperature{
+        font-size: 16pt;
+    }
+    h3{
+        font-size: 15pt;
+    }
     h2{
-        font-size: 14pt;
+        font-size: 20pt;
     }
     .weather-here-update-button{
         margin-left: 10%;   
@@ -154,7 +184,6 @@ ul{
         display: none;
     }
     .weather-here-update-img{
-        display: block;
         width: 50px;
         height: 50px;
         background-color: white;
@@ -162,7 +191,12 @@ ul{
         border: 2px solid black;
     }
     .update-media{
+        display: block;
         margin-left: 6%;
+        border: 0; 
+        background: transparent;
+        cursor: pointer;
+        padding: 0;
     }
     .weather-here{
         grid-area: weather-here;

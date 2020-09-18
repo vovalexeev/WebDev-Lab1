@@ -10,13 +10,13 @@
 <body>
     <main>
         <section class="weather-here-header">
-            <h2 class="main-title">Weather here</h2>
+            <h1 class="main-title">Weather here</h1>
             <button class="weather-here-update-button" type="button">Update geolocation</button>
-            <a class="update-media" href="#"><img class="weather-here-update-img" src="img/update-geolocation.png" alt="Update-geolocation"></a>
+            <button class="update-media"><img class="weather-here-update-img" src="img/update-geolocation.png" alt="Update-geolocation"></button>
         </section> 
         <section class="weather-here">
             <section class="weather-here-city">
-                <h1>Saint Petersburg</h1>
+                <h2>Saint Petersburg</h2>
                 <section class="weather-here-main">
                     <img class="weather-here-icon" src="img/cloud.png" alt="SPb-icon">
                     <div class="weather-here-temperature">8°C</div>
@@ -24,24 +24,24 @@
             </section>
             <ul class="weather-here-extra-data">
                 <li class="extra-parameter">
-                    <b>Wind</b>
-                    Light breeze, 6.0 m/s, NNW
+                    <span class="name-parameter">Wind</span>
+                    <span>Light breeze, 6.0 m/s, NNW</span>
                 </li>
                 <li class="extra-parameter">
-                    <b>Cloud cover</b>
-                    Broken
+                    <span class="name-parameter">Cloud cover</span>
+                    <span>Broken</span>
                 </li>
                 <li class="extra-parameter">
-                    <b>Atmospheric pressure</b>
-                    1010 hpa
+                    <span class="name-parameter">Atmospheric pressure</span>
+                    <span>1010 hpa</span>
                 </li>
                 <li class="extra-parameter">
-                    <b>Humidity</b>
-                    60%
+                    <span class="name-parameter">Humidity</span>
+                    <span>60%</span>
                 </li>
                 <li class="extra-parameter">
-                    <b>Coordinates</b>
-                    [59°57′, 30°19′]
+                    <span class="name-parameter">Coordinates</span>
+                    <span>[59°57′, 30°19′]</span>
                 </li>
             </ul>
         </section>
@@ -49,187 +49,187 @@
             <h2 class="main-title">Favorites</h2>
             <form class="add-city-form">
                 <input id="add-city-input" class="add-city-input" required type="text" placeholder="Add a new city">
-                <a href="#"><img class="add-city-icon" src="img/plus.png" alt="Add city"></a>
+                <button class="add-button"><img class="add-city-icon" src="img/plus.png" alt="Add city"></button>
             </form>
         </section>
         <section class="favorites-cities">
             <section class="favorites-city">
                 <section class="favorites-main">
-                    <h2>Moscow</h2>
-                    <h2>10°C</h2>
+                    <h3>Moscow</h3>
+                    <div class="temperature">10°C</div>
                     <img class="favorites-icon-weather" src="img/partly-cloudy.png" alt="Moscow-icon">
-                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                    <button class="delete-button"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></button>
                 </section>
                 <ul>
                     <li class="extra-parameter">
-                        <b>Wind</b>
-                        Gentle breeze, 4.5 m/s, SE
+                        <span class="name-parameter">Wind</span>
+                        <span>Gentle breeze, 4.5 m/s, SE</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Cloud cover</b>
-                        Overcast
+                        <span class="name-parameter">Cloud cover</span>
+                        <span>Overcast</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Atmospheric pressure</b>
-                        1007 hpa
+                        <span class="name-parameter">Atmospheric pressure</span>
+                        <span>1007 hpa</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Humidity</b>
-                        15%
+                        <span class="name-parameter">Humidity</span>
+                        <span>15%</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Coordinates</b>
-                        [55°45′, 37°36′]
+                        <span class="name-parameter">Coordinates</span>
+                        <span>[55°45′, 37°36′]</span>
                     </li>
                 </ul>
             </section>
             <section class="favorites-city">
                 <section class="favorites-main">
-                    <h2>Krasnoyarsk</h2>
-                    <h2>8°C</h2>
+                    <h3>Krasnoyarsk</h3>
+                    <div class="temperature">8°C</div>
                     <img class="favorites-icon-weather" src="img/cloud-lighting.png" alt="Krasnoyarsk-icon">
-                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                    <button class="delete-button"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></button>
                 </section>
                 <ul>
                     <li class="extra-parameter">
-                        <b>Wind</b>
-                        Gentle breeze, 4.0 m/s, E
+                        <span class="name-parameter">Wind</span>
+                        <span>Gentle breeze, 4.0 m/s, E</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Cloud cover</b>
-                        Broken
+                        <span class="name-parameter">Cloud cover</span>
+                        <span>Broken</span>
                     </li>
                     <li class="extra-parameter"> 
-                        <b>Atmospheric pressure</b>
-                        1012 hpa
+                        <span class="name-parameter">Atmospheric pressure</span>
+                        <span>1012 hpa</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Humidity</b>
-                        50%
+                        <span class="name-parameter">Humidity</span>
+                        <span>50%</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Coordinates</b>
-                        [56°01′, 92°52′]
+                        <span class="name-parameter">Coordinates</span>
+                        <span>[56°01′, 92°52′]</span>
                     </li>
                 </ul>
             </section>
             <section class="favorites-city">
                 <section class="favorites-main">
-                    <h2>Zelenogorsk</h2>
-                    <h2>4°C</h2>
+                    <h3>Zelenogorsk</h3>
+                    <div class="temperature">4°C</div>
                     <img class="favorites-icon-weather" src="img/heavy-rain.png" alt="Zelenogorsk-icon">
-                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                    <button class="delete-button"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></button>
                 </section>
                 <ul>
                     <li class="extra-parameter">
-                        <b>Wind</b>
-                        Light breeze, 6.0 m/s, NNW
+                        <span class="name-parameter">Wind</span>
+                        <span>Light breeze, 6.0 m/s, NNW</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Cloud cover</b>
-                        Clear
+                        <span class="name-parameter">Cloud cover</span>
+                        <span>Clear</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Atmospheric pressure</b>
-                        1014 hpa
+                        <span class="name-parameter">Atmospheric pressure</span>
+                        <span>1014 hpa</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Humidity</b>
-                        90%
+                        <span class="name-parameter">Humidity</span>
+                        <span>90%</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Coordinates</b>
-                        [56°06′, 94°35′]
+                        <span class="name-parameter">Coordinates</span>
+                        <span>[56°06′, 94°35′]</span>
                     </li>
                 </ul>
             </section>
             <section class="favorites-city">
                 <section class="favorites-main">
-                    <h2>Paris</h2>
-                    <h2>-3°C</h2>
+                    <h3>Paris</h3>
+                    <div class="temperature">-3°C</div>
                     <img class="favorites-icon-weather" src="img/sun.png" alt="Paris-icon">
-                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                    <button class="delete-button"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></button>
                 </section>
                 <ul>
                     <li class="extra-parameter">
-                        <b>Wind</b>
-                        Light breeze, 2.5 m/s, WNW
+                        <span class="name-parameter">Wind</span>
+                        <span>Light breeze, 2.5 m/s, WNW</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Cloud cover</b>
-                        Scattered 
+                        <span class="name-parameter">Cloud cover</span>
+                        <span>Scattered</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Atmospheric pressure</b>
-                        1009 hpa
+                        <span class="name-parameter">Atmospheric pressure</span>
+                        <span>1009 hpa</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Humidity</b>
-                        50%
+                        <span class="name-parameter">Humidity</span>
+                        <span>50%</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Coordinates</b>
-                        [48°51′, 2°20′]
+                        <span class="name-parameter">Coordinates</span>
+                        <span>[48°51′, 2°20′]</span>
                     </li>
                 </ul>
             </section>
             <section class="favorites-city">
                 <section class="favorites-main">
-                    <h2>London</h2>
-                    <h2>-2°C</h2>
+                    <h3>London</h3>
+                    <div class="temperature">-2°C</div>
                     <img class="favorites-icon-weather" src="img/snow.png" alt="London-icon">
-                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                    <button class="delete-button"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></button>
                 </section>
                 <ul>
                     <li class="extra-parameter">
-                        <b>Wind</b>
-                        Moderate breeze, 6.0 m/s, W
+                        <span class="name-parameter">Wind</span>
+                        <span>Moderate breeze, 6.0 m/s, W</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Cloud cover</b>
-                        Scattered 
+                        <span class="name-parameter">Cloud cover</span>
+                        <span>Scattered</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Atmospheric pressure</b>
-                        1010 hpa
+                        <span class="name-parameter">Atmospheric pressure</span>
+                        <span>1010 hpa</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Humidity</b>
-                        5%
+                        <span class="name-parameter">Humidity</span>
+                        <span>5%</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Coordinates</b>
-                        [51°30′, 0°07′]
+                        <span class="name-parameter">Coordinates</span>
+                        <span>[51°30′, 0°07′]</span>
                     </li>
                 </ul>
             </section>
             <section class="favorites-city">
                 <section class="favorites-main">
-                    <h2>Berlin</h2>
-                    <h2>16°C</h2>
+                    <h3>Berlin</h3>
+                    <div class="temperature">16°C</div>
                     <img class="favorites-icon-weather" src="img/cloud.png" alt="Berlin-icon">
-                    <a href="#"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></a>
+                    <button class="delete-button"><img class="favorites-icon-delete" src="img/delete-city.png" alt="Delete city"></button>
                 </section>
                 <ul>
                     <li class="extra-parameter">
-                        <b>Wind</b>
-                        Light air, 1 m/s, S
+                        <span class="name-parameter">Wind</span>
+                        <span>Light air, 1 m/s, S</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Cloud cover</b>
-                        Overcast
+                        <span class="name-parameter">Cloud cover</span>
+                        <span>Overcast</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Atmospheric pressure</b>
-                        1011 hpa
+                        <span class="name-parameter">Atmospheric pressure</span>
+                        <span>1011 hpa</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Humidity</b>
-                        76%
+                        <span class="name-parameter">Humidity</span>
+                        <span>76%</span>
                     </li>
                     <li class="extra-parameter">
-                        <b>Coordinates</b>
-                        [52°31′, 13°24′]
+                        <span class="name-parameter">Coordinates</span>
+                        <span>[52°31′, 13°24′]</span>
                     </li>
                 </ul>
             </section>
